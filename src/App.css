@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-box {
+  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-button {
+  margin-left: 10px;
+  width: 70px;
+  padding: 10px;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.todo-list-container {
+  margin: 10px 0px;
+  display: grid;
+  text-align: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  grid-template-columns: 360px;
+  /* border: solid; */
 }
 
-.App-link {
-  color: #61dafb;
+.to-do-item {
+  /* border: solid; */
+  background-color: yellow;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  margin: 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done {
+  background-color: red;
 }
+
+.left-item {
+  font-size: large;
+  flex: 90%;
+  /* border: solid; */
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  height: 23px;   
+  width: 23px;
+  /* padding: 10px; */
+  margin-right: 20px;
+}
+
+.right-item {
+  /* border: solid; */
+  display: flex;
+  flex: 5%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.to-do-text {
+  font-weight: bold;
+  color: #262626;
+}
+
+.striked {
+  text-decoration: line-through;
+  color: #262626;
+}
+
+.delete-button {
+  background-color: white;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
